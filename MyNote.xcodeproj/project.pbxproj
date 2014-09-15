@@ -13,6 +13,9 @@
 		1873764019C61EE0003EEA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1873763E19C61EE0003EEA82 /* Main.storyboard */; };
 		1873764219C61EE0003EEA82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873764119C61EE0003EEA82 /* Images.xcassets */; };
 		1873764E19C61EE0003EEA82 /* MyNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873764D19C61EE0003EEA82 /* MyNoteTests.m */; };
+		1873766219C6261B003EEA82 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873766119C6261B003EEA82 /* AddToDoItemViewController.m */; };
+		1873766519C62879003EEA82 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873766419C62879003EEA82 /* ToDoListTableViewController.m */; };
+		18D6336219C63A6300D46DFF /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6336119C63A6300D46DFF /* ToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		1873764719C61EE0003EEA82 /* MyNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1873764C19C61EE0003EEA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1873764D19C61EE0003EEA82 /* MyNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNoteTests.m; sourceTree = "<group>"; };
+		1873766019C6261B003EEA82 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
+		1873766119C6261B003EEA82 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		1873766319C62879003EEA82 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
+		1873766419C62879003EEA82 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
+		18D6336019C63A6300D46DFF /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		18D6336119C63A6300D46DFF /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +88,17 @@
 		1873763319C61EE0003EEA82 /* MyNote */ = {
 			isa = PBXGroup;
 			children = (
+				1873766019C6261B003EEA82 /* AddToDoItemViewController.h */,
+				1873766119C6261B003EEA82 /* AddToDoItemViewController.m */,
 				1873763819C61EE0003EEA82 /* AppDelegate.h */,
 				1873763919C61EE0003EEA82 /* AppDelegate.m */,
 				1873763B19C61EE0003EEA82 /* ViewController.h */,
 				1873763C19C61EE0003EEA82 /* ViewController.m */,
 				1873763E19C61EE0003EEA82 /* Main.storyboard */,
+				18D6336019C63A6300D46DFF /* ToDoItem.h */,
+				18D6336119C63A6300D46DFF /* ToDoItem.m */,
+				1873766319C62879003EEA82 /* ToDoListTableViewController.h */,
+				1873766419C62879003EEA82 /* ToDoListTableViewController.m */,
 				1873764119C61EE0003EEA82 /* Images.xcassets */,
 				1873763419C61EE0003EEA82 /* Supporting Files */,
 			);
@@ -215,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D6336219C63A6300D46DFF /* ToDoItem.m in Sources */,
 				1873763D19C61EE0003EEA82 /* ViewController.m in Sources */,
 				1873763A19C61EE0003EEA82 /* AppDelegate.m in Sources */,
 				1873763719C61EE0003EEA82 /* main.m in Sources */,
+				1873766519C62879003EEA82 /* ToDoListTableViewController.m in Sources */,
+				1873766219C6261B003EEA82 /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +422,7 @@
 				1873765319C61EE0003EEA82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1873765419C61EE0003EEA82 /* Build configuration list for PBXNativeTarget "MyNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +431,7 @@
 				1873765619C61EE0003EEA82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
